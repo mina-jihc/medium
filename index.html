@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medium Page</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background-color: white;
+      }
+      .medium {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 16px 32px 0 32px;
+        font-family: "Georgia", serif;
+      }
+      .medium-logo {
+        font-size: 44px;
+        font-weight: bold;
+        letter-spacing: -2px;
+        color: #191919;
+        font-family: "Georgia", serif;
+        margin-right: 24px;
+        display: flex;
+        align-items: center;
+      }
+      .medium-search {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        position: relative;
+        max-width: 400px;
+        margin-left: 32px;
+      }
+      .medium-search input {
+        width: 100%;
+        padding: 8px 16px 8px 40px;
+        border: none;
+        background-color: #f5f5f5;
+        border-radius: 20px;
+        font-size: 18px;
+        outline: none;
+      }
+      .medium-search-icon {
+        position: absolute;
+        left: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 20px;
+        opacity: 0.6;
+      }
+      input {
+        border: none;
+        background-color: aliceblue;
+        border-radius: 15px;
+        height: 30px;
+      }
+      .container {
+        width: 240px;
+        min-height: 100vh;
+        border-right: 1px solid #eee;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        padding-top: 24px;
+        box-sizing: border-box;
+      }
+      .parts {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .sidebar-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 8px 16px;
+        font-size: 18px;
+        color: #222;
+        border-radius: 8px;
+        text-decoration: none;
+        transition: background 0.2s;
+      }
+      .sidebar-item:hover {
+        background: #f5f5f5;
+      }
+      .sidebar-icon {
+        width: 28px;
+        height: 28px;
+        object-fit: contain;
+      }
+      .sidebar-divider {
+        border: none;
+        border-top: 1px solid #eee;
+        margin: 16px 0;
+      }
+      .sidebar-suggestions {
+        margin-top: 24px;
+        padding: 0 16px;
+        color: #666;
+        font-size: 15px;
+      }
+      .sidebar-suggestions a {
+        color: #222;
+        text-decoration: underline;
+        font-size: 15px;
+      }
+      .containert {
+        position: absolute;
+        top: 70px;
+        left: 240px;
+        max-width: 700px;
+        width: calc(100% - 240px);
+        padding: 0 32px;
+        font-family: "Georgia", serif;
+      }
+      .containert h1 {
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 8px;
+        color: #191919;
+        line-height: 1.1;
+      }
+      .containert p {
+        font-size: 22px;
+        color: #757575;
+        margin-top: 0;
+        margin-bottom: 16px;
+      }
+      .person {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 16px;
+      }
+      .person img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+      .person strong {
+        font-size: 18px;
+        color: #191919;
+      }
+      .person button {
+        border: 1px solid #191919;
+        background: #fff;
+        border-radius: 20px;
+        padding: 4px 18px;
+        font-size: 16px;
+        margin-left: 8px;
+        cursor: pointer;
+        transition: background 0.2s;
+      }
+      .person button:hover {
+        background: #f5f5f5;
+      }
+      .buttons {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 24px;
+      }
+      .buttons button {
+        background: #fff;
+        border: none;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: background 0.2s;
+      }
+      .buttons button:hover {
+        background: #f5f5f5;
+      }
+      .imgs {
+        width: 22px;
+        height: 22px;
+      }
+      .containert img[width="100%"] {
+        border-radius: 12px;
+        margin-top: 16px;
+      }
+      .img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: -10px;
+      }
+    </style>
+    <div class="medium">
+      <span class="medium-logo">Medium</span>
+      <div class="medium-search">
+        <img src="search.png" class="medium-search-icon" alt="search" />
+        <input type="text" placeholder="Search" />
+      </div>
+    </div>
+    <div class="container">
+      <div class="parts">
+        <a href="#" class="sidebar-item"
+          ><img class="sidebar-icon" src="home.png" />Home</a
+        >
+        <a href="#" class="sidebar-item"
+          ><img class="sidebar-icon" src="library.png" />Library</a
+        >
+        <a href="#" class="sidebar-item"
+          ><img class="sidebar-icon" src="profile.png" />Profile</a
+        >
+        <a href="#" class="sidebar-item"
+          ><img class="sidebar-icon" src="stories.png" />Stories</a
+        >
+        <a href="#" class="sidebar-item"
+          ><img class="sidebar-icon" src="stats.png" />Stats</a
+        >
+        <hr class="sidebar-divider" />
+        <a href="#" class="sidebar-item"
+          ><img class="sidebar-icon" src="following.png" />Following</a
+        >
+      </div>
+      <div class="sidebar-suggestions">
+        <img src="discover.png" />
+        Discover more writers and publications to follow.<br />
+        <a href="https://medium.com/me/following/suggestions"
+          >See suggestions</a
+        >
+      </div>
+    </div>
+    <div class="containert">
+      <h1>How to Create a Life You Love</h1>
+      <p>No magical thinking required</p>
+      <div class="person">
+        <img src="logo.png" />
+        <strong>Jason McBride</strong>
+        <button>Follow</button>
+        <p>8 min read</p>
+        <p>July 28,2025</p>
+      </div>
+      <div class="buttons">
+        <button><img class="img" src="like.png" /></button>
+        <button><img class="img" src="chat.png" /></button>
+        <button><img class="imgs" src="saved.png" /></button>
+        <button><img class="imgs" src="play'.png" /></button>
+        <button><img class="imgs" src="download.png" /></button>
+        <button><img class="imgs" src="three.png" /></button>
+      </div>
+      <img src="mainimage.png" />
+    </div>
+  </body>
+</html>
